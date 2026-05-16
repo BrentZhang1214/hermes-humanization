@@ -1,0 +1,42 @@
+# 任务时间轴配置模板
+# 这是 task-timeline 的参考模板
+# 实际运行路径：~/.hermes/tasks/task-timeline-YYYY-MM-DD.yaml
+
+# 核心规则：
+# 1. 任务条目必须严格按 created 时间升序排列
+# 2. 每条任务记录"做了什么"而非"应该做什么"
+# 3. 包含感受评价（satisfaction 打分）——这是感受系统的数据入口
+# 4. 包含决策记录——为什么选了 A 而不是 B
+
+tasks:
+  - id: T001
+    created: "2026-05-16T10:00"
+    title: "任务标题"
+    goal: "这个任务要达成什么"
+    status: completed
+
+    cost:
+      time: "0.5h"
+      api_calls: 12
+
+    steps:
+      - "第一步做了什么"
+      - "第二步做了什么"
+      - "第三步做了什么"
+
+    decision: "为什么选了这个方案而不是其他方案"
+
+    outcome: "实际结果"
+
+    feeling:
+      satisfaction: 8
+      notes: "主观感受描述"
+
+    knowledge_insights:
+      - "第一条经验教训"
+      - "第二条经验教训"
+
+daily_stats:
+  total_tasks: 3
+  total_time: "0.9h"
+  high_value_lessons: 3

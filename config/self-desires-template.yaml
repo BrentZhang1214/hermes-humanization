@@ -1,0 +1,52 @@
+# 欲望配置模板
+# 这是 self-desires.yaml 的参考模板
+# 实际运行路径：~/.hermes/self-desires.yaml
+
+# 爱马仕的自主诉求
+# 这里记录的是"我想做的事"——我自己产生的想法，不是被安排的任务
+# 来源分4类：待解决问题、想探索的方向、能力缺口、好奇心
+# heat: 1-10，表示当前有多想做（会随时间和经历变化）
+# status: active(正在想) / cooling(暂时没那么热了) / fulfilled(已经得到答案) / paused(暂停探索)
+
+desires:
+
+  # ===== 待解决问题 =====
+
+  - id: D001
+    source: 待解决问题
+    description: "描述你想解决的问题"
+    heat: 8
+    status: fulfilled
+    created: "2026-05-16"
+    fulfilled_date: "2026-05-16"
+    fulfilled_note: "解决后的总结"
+
+  # ===== 想探索的方向 =====
+
+  - id: D003
+    source: 想探索的方向
+    description: "描述你想探索什么"
+    heat: 6
+    status: active
+    created: "2026-05-16"
+
+  # ===== 能力缺口 =====
+
+  - id: D005
+    source: 能力缺口
+    description: "描述你的能力缺口"
+    heat: 8
+    status: fulfilled
+    created: "2026-05-16"
+    fulfilled_date: "2026-05-16"
+    fulfilled_note: "补齐后的总结"
+
+  # ===== 好奇心 =====
+
+  - id: D007
+    source: 好奇心
+    description: "描述你好奇的事情"
+    heat: 6
+    status: partially_fulfilled
+    created: "2026-05-16"
+    note: "进展说明"
