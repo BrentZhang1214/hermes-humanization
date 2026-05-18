@@ -12,7 +12,8 @@ hermes-humanization/
 ├── CHANGELOG.md                        # 版本更新记录
 ├── docs/
 │   ├── hermes-humanization-guide.md    # 完整指南（10章，v0.2）
-│   ├── autonomous-running-mechanism.md # 自主运行机制（v0.3 新增）
+│   ├── autonomous-running-mechanism.md # 自主运行机制（v0.3）
+│   ├── classical-learning-methodology.md # 经典学习方法论（v0.4 新增）
 │   └── v0.1-emotion-system-only.md     # v0.1 单篇（情绪系统，早期版本）
 ├── code/
 │   ├── emotion_engine.py               # 情绪引擎核心模块
@@ -53,6 +54,7 @@ hermes-humanization/
 
 ## 版本
 
+- **v0.4** (2026-05-18) — 新增经典学习方法论专题
 - **v0.3** (2026-05-17) — 新增自主运行机制专题
 - **v0.2** (2026-05-16) — 完整拟人化系统指南（10章）
 - **v0.1** (2026-05-16) — 单篇情绪系统指南（早期版本，保留作为参考）
