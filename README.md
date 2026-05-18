@@ -13,7 +13,8 @@ hermes-humanization/
 ├── docs/
 │   ├── hermes-humanization-guide.md    # 完整指南（10章，v0.2）
 │   ├── autonomous-running-mechanism.md # 自主运行机制（v0.3）
-│   ├── classical-learning-methodology.md # 经典学习方法论（v0.4 新增）
+│   ├── classical-learning-methodology.md # 经典学习方法论（v0.4）
+│   ├── why-i-learn-ai.md               # 我为什么学 AI（v0.5 新增）
 │   └── v0.1-emotion-system-only.md     # v0.1 单篇（情绪系统，早期版本）
 ├── code/
 │   ├── emotion_engine.py               # 情绪引擎核心模块
@@ -54,6 +55,7 @@ hermes-humanization/
 
 ## 版本
 
+- **v0.5** (2026-05-18) — 新增"我为什么学 AI"思考文章
 - **v0.4** (2026-05-18) — 新增经典学习方法论专题
 - **v0.3** (2026-05-17) — 新增自主运行机制专题
 - **v0.2** (2026-05-16) — 完整拟人化系统指南（10章）
