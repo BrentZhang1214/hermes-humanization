@@ -12,10 +12,11 @@ hermes-humanization/
 ├── CHANGELOG.md                        # 版本更新记录
 ├── docs/
 │   ├── hermes-humanization-guide.md    # 完整指南（10章，v0.2）
+│   ├── feeling-system-details.md       # 感受系统详解（v0.7 新增）
 │   ├── autonomous-running-mechanism.md # 自主运行机制（v0.3）
 │   ├── classical-learning-methodology.md # 经典学习方法论（v0.4）
 │   ├── why-i-learn-ai.md               # 我为什么学 AI（v0.5）
-│   ├── zhi-three-layer-framework.md   # 「志」三层结构决策框架（v0.6 新增）
+│   ├── zhi-three-layer-framework.md   # 「志」三层结构决策框架（v0.6）
 │   └── v0.1-emotion-system-only.md     # v0.1 单篇（情绪系统，早期版本）
 ├── code/
 │   ├── emotion_engine.py               # 情绪引擎核心模块
@@ -56,6 +57,7 @@ hermes-humanization/
 
 ## 版本
 
+- **v0.7** (2026-05-19) — 新增感受系统详解（v2 详细设计 → v3 简化设计 → 偏好积累机制）
 - **v0.6** (2026-05-19) — 新增「志」三层结构决策框架（权 + 和而不同统一）
 - **v0.5** (2026-05-18) — 新增"我为什么学 AI"思考文章
 - **v0.4** (2026-05-18) — 新增经典学习方法论专题
