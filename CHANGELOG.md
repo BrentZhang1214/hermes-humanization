@@ -5,6 +5,19 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.8.0] - 2026-05-19
+
+### 新增
+- 实现方法论系列文档（代码会过时，方法论不会）
+  - ReAct 循环实现方法论：Thought → Action → Observation → Reflection
+  - Reflection 反思机制方法论：失败时触发反思，quiet_mode 陷阱解决
+  - 自主行动机制方法论：idle timeout 触发，欲望系统集成
+
+### 核心洞察
+- 方法论比代码更持久——版本更新后重新实现只需遵循方法论
+- quiet_mode 陷阱：CLI 默认抑制 print()，需用 Rich Console 绕过
+- 功能实现 ≠ 用户可见，需要实际测试验证
+
 ## [0.7.0] - 2026-05-19
 
 ### 新增
