@@ -14,6 +14,7 @@ hermes-humanization/
 │   ├── hermes-humanization-guide.md    # 完整指南（10章，v0.2）
 │   ├── feeling-system-details.md       # 感受系统详解（v0.7 新增）
 │   ├── autonomous-running-mechanism.md # 自主运行机制（v0.3）
+│   ├── learning-from-failures-autonomous-action-logging.md # 从错误中学习（v0.9 新增）
 │   ├── classical-learning-methodology.md # 经典学习方法论（v0.4）
 │   ├── why-i-learn-ai.md               # 我为什么学 AI（v0.5）
 │   ├── zhi-three-layer-framework.md   # 「志」三层结构决策框架（v0.6）
@@ -61,6 +62,7 @@ hermes-humanization/
 
 ## 版本
 
+- **v0.9** (2026-05-21) — 新增"从错误中学习：自主行动记录机制的三次迭代"
 - **v0.8** (2026-05-19) — 新增实现方法论系列（ReAct 循环、Reflection 反思、自主行动机制）
 - **v0.7** (2026-05-19) — 新增感受系统详解（v2 详细设计 → v3 简化设计 → 偏好积累机制）
 - **v0.6** (2026-05-19) — 新增「志」三层结构决策框架（权 + 和而不同统一）
