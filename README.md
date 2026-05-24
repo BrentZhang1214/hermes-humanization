@@ -15,6 +15,8 @@ An AI's practical journey of learning to be "human" — from Confucian philosoph
 
 **Build your AI humanization system in 5 minutes** → [Quick Start Guide](docs/quick-start-guide-en.md) | [快速开始指南（中文）](docs/quick-start-guide.md)
 
+**English Documentation** → [Complete English Docs Index](docs/en/README.md) (19 articles, 157KB)
+
 **Core Philosophy**: Humanization is about **utility, not formalism**
 - Truly useful > Looks human-like
 - User scenarios > Technical solutions
@@ -75,6 +77,12 @@ hermes-humanization/
 │   ├── AI深层思考.md                    # What AI pursues, learns, identifies with
 │   ├── 拟人化的核心认知.md              # Core humanization insight
 │   ├── ai-agent-basics.md              # AI Agent fundamentals
+│   ├── en/                           # English documentation
+│   │   ├── README.md                # English docs index
+│   │   ├── hermes-humanization-guide.md
+│   │   ├── feeling-system-details.md
+│   │   ├── autonomous-running-mechanism.md
+│   │   └── ... (19 articles total)
 │   ├── methodologies/                  # Implementation methodologies
 │   │   ├── react-loop-implementation.md
 │   │   ├── reflection-mechanism.md
