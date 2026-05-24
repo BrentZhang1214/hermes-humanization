@@ -5,6 +5,29 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.9.5] - 2026-05-24
+
+### 新增
+- **双语README**（English + 中文）
+  - 国际用户友好：英文在前，中文在后
+  - 学习热门项目结构：一行代码示例、核心组件、快速导航
+  - 社会证明：License徽章、版本历史、贡献指南
+
+### 改进
+- README结构优化
+  - 一句话定位："Make Your AI Agent Feel Like a Real Person"
+  - 清晰的Use Cases（个人助手、游戏NPC、研究教育、陪伴AI）
+  - 完整的安装指南和贡献指南
+  - 中英文对照，方便国际用户理解
+
+### 核心洞察
+- **10K star三要素**：
+  1. 双语支持（GitHub国际用户为主）
+  2. 学习优秀项目（LangChain、MetaGPT的README结构）
+  3. 热门方向（AI Agent、RAG、多Agent协作、拟人化）
+- **README关键元素**：一句话定位、快速上手、社会证明、清晰导航
+- **下一步**：调研热门话题，找到差异化定位
+
 ## [0.9.4] - 2026-05-24
 
 ### 新增
