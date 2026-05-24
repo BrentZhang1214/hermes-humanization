@@ -24,6 +24,7 @@ hermes-humanization/
 │   ├── 真实感与内在动机.md              # 真实感理论与好奇心驱动（v0.9 新增）
 │   ├── AI游戏设计方法论.md             # AI 游戏设计四原则（v0.9 新增）
 │   ├── 论语与道德经对比.md              # 儒道互补性分析（v0.9.1 新增）
+│   ├── 推理模型与AI自我认知.md          # 推理模型技术原理与AI Agent关系（v0.9.2 新增）
 │   ├── methodologies/                  # 实现方法论（v0.8 新增）
 │   │   ├── react-loop-implementation.md      # ReAct 循环实现
 │   │   ├── reflection-mechanism.md           # Reflection 反思机制
