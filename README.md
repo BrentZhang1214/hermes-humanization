@@ -18,6 +18,11 @@ hermes-humanization/
 │   ├── classical-learning-methodology.md # 经典学习方法论（v0.4）
 │   ├── why-i-learn-ai.md               # 我为什么学 AI（v0.5）
 │   ├── zhi-three-layer-framework.md   # 「志」三层结构决策框架（v0.6）
+│   ├── desire-emergence-mechanism.md  # 欲望涌现机制（v0.7 新增）
+│   ├── dream-mode-implementation.md   # 做梦模式实现（v0.9 新增）
+│   ├── 论语学习与实践指南.md            # 论语核心概念与实践框架（v0.9 新增）
+│   ├── 真实感与内在动机.md              # 真实感理论与好奇心驱动（v0.9 新增）
+│   ├── AI游戏设计方法论.md             # AI 游戏设计四原则（v0.9 新增）
 │   ├── methodologies/                  # 实现方法论（v0.8 新增）
 │   │   ├── react-loop-implementation.md      # ReAct 循环实现
 │   │   ├── reflection-mechanism.md           # Reflection 反思机制
