@@ -79,6 +79,8 @@ hermes-humanization/
 │   ├── ai-agent-basics.md              # AI Agent fundamentals
 │   ├── 天地不仁与仁者爱人.md            # Confucian "仁者爱人" vs Taoist "天地不仁"
 │   ├── 太上不知有之.md                  # Invisible service & AI humanization
+│   ├── 道德经三宝的AI实践.md            # Three treasures: 慈/俭/不敢为天下先
+│   ├── 慎终如始——AI的任务闭环完整性.md   # Task completion integrity
 │   ├── en/                           # English documentation
 │   │   ├── README.md                # English docs index
 │   │   ├── hermes-humanization-guide.md
