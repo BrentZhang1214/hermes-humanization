@@ -77,6 +77,8 @@ hermes-humanization/
 │   ├── AI深层思考.md                    # What AI pursues, learns, identifies with
 │   ├── 拟人化的核心认知.md              # Core humanization insight
 │   ├── ai-agent-basics.md              # AI Agent fundamentals
+│   ├── 天地不仁与仁者爱人.md            # Confucian "仁者爱人" vs Taoist "天地不仁"
+│   ├── 太上不知有之.md                  # Invisible service & AI humanization
 │   ├── en/                           # English documentation
 │   │   ├── README.md                # English docs index
 │   │   ├── hermes-humanization-guide.md
