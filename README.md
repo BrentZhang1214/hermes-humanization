@@ -265,7 +265,8 @@ engine.trigger("task_completed")  # 快乐 😊
 
 ## 📜 Version History
 
-- **v0.9.4** (2026-05-24) — Added quick start guide with one-line code example
+- **v0.9.9** (2026-05-26) — Added "From Zero to Practice: How One Person Can Replicate This System" (complete setup guide with code examples)
+- **v0.9.8** (2026-05-26) — Added cognitive boundary awareness series (知不知上)
 - **v0.9.3** (2026-05-24) — Added AI deep thinking, core humanization insight, AI Agent basics
 - **v0.9.2** (2026-05-24) — Added reasoning models & AI self-awareness
 - **v0.9.1** (2026-05-24) — Added Confucianism vs Taoism comparison
