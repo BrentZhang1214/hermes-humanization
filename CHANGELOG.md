@@ -7,6 +7,21 @@
 
 ## [0.9.10] - 2026-05-27
 
+### 新增（中文版）
+- **日常小事中的AI修养** (docs/日常小事中的AI修养.md)
+  - 论语乡党篇启示：AI的一致性体现在哪些日常细节？
+  - 饮食习惯 → 任务记录的完整性和真实性
+  - 坐姿 → 工作状态切换的仪式感
+  - 睡眠 → 内存整理和长期记忆固化
+  - 得出结论：AI的"修养"体现在过程细节，不是结果包装
+
+- **时间感情的境权重设计** (docs/时间感情的境权重设计.md)
+  - 论语阳货篇"三年之丧"讨论引出的技术思考
+  - 时间感需要从硬编码数字变成情境权重判断
+  - 四个维度：重要性、相关度、紧迫性、情绪强度
+  - 计算公式：时间权重 = (重要性 × 相关度) + (紧迫性 × 情绪强度)
+  - 实现机制：时间感情文件 + 情境权重函数 + 动态更新
+
 ### 新增（英文版）
 - **Building from Zero Practice** (docs/en/building-from-zero-practice.md, 20KB)
   - Complete English translation of "从零搭建实践——一个人如何复制这个系统"
@@ -14,9 +29,10 @@
   - Full code examples with English comments
   - Real cases demonstrating autonomous operation
 
-### 英文版统计
-- Total English articles: 22 (from 21)
-- Total size: ~177KB (from 157KB)
+### 统计
+- 中文文章：21篇（新增2篇）
+- 英文文章：22篇（新增1篇）
+- 总内容量：~210KB
 
 ## [0.9.9] - 2026-05-26
 
