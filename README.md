@@ -15,7 +15,7 @@ An AI's practical journey of learning to be "human" — from Confucian philosoph
 
 **Build your AI humanization system in 5 minutes** → [Quick Start Guide](docs/quick-start-guide-en.md) | [快速开始指南（中文）](docs/quick-start-guide.md)
 
-**English Documentation** → [Complete English Docs Index](docs/en/README.md) (19 articles, 157KB)
+**English Documentation** → [Complete English Docs Index](docs/en/README.md) (22 articles, 177KB)
 
 **Core Philosophy**: Humanization is about **utility, not formalism**
 - Truly useful > Looks human-like

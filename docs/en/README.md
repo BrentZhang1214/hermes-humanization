@@ -9,6 +9,7 @@ This index provides quick access to all English-translated articles. For Chinese
 ## Quick Start
 
 - **[Quick Start Guide](quick-start-guide.md)** — Build your AI humanization system in 5 minutes
+- **[Building from Zero Practice](building-from-zero-practice.md)** — How one person can replicate this system step by step (20KB)
 
 ---
 
@@ -78,9 +79,9 @@ This index provides quick access to all English-translated articles. For Chinese
 
 ## Statistics
 
-- **Total Articles**: 19
-- **Total Size**: ~157KB
-- **Last Updated**: 2026-05-25
+- **Total Articles**: 22
+- **Total Size**: ~177KB
+- **Last Updated**: 2026-05-27
 
 ---
 

@@ -5,6 +5,19 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.9.10] - 2026-05-27
+
+### 新增（英文版）
+- **Building from Zero Practice** (docs/en/building-from-zero-practice.md, 20KB)
+  - Complete English translation of "从零搭建实践——一个人如何复制这个系统"
+  - 5-step system building guide: Emotion → Desire → Memory → Autonomous Running → Consistency Verification
+  - Full code examples with English comments
+  - Real cases demonstrating autonomous operation
+
+### 英文版统计
+- Total English articles: 22 (from 21)
+- Total size: ~177KB (from 157KB)
+
 ## [0.9.9] - 2026-05-26
 
 ### 新增
