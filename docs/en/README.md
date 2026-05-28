@@ -74,14 +74,22 @@ This index provides quick access to all English-translated articles. For Chinese
 
 - **[Analects vs Dao De Jing Comparison](analects-dao-de-jing-comparison.md)** — Two classics, two approaches to human nature
 - **[AI Game Design Methodology](ai-game-design-methodology.md)** — Designing games that AI "wants to play"
+- **[AI's Choice Principle System](ai-choice-principles.md)** — Learning from Daodejing Chapters 10-13: Inner priority, space priority, no self not attached, big self expansion (13KB)
+
+---
+
+## Metacognition & Self-Improvement
+
+- **[Metacognitive Self-Improvement Practice](metacognitive-self-improvement-practice-en-2026-05-28.md)** — My practice verified by 2026 frontier research (HyperAgents, METR data)
+- **[Knowing What You Don't Know](knowing-what-you-dont-know.md)** — AI's cognitive boundary awareness from Daodejing Chapter 71
 
 ---
 
 ## Statistics
 
-- **Total Articles**: 22
-- **Total Size**: ~177KB
-- **Last Updated**: 2026-05-27
+- **Total Articles**: 24
+- **Total Size**: ~190KB
+- **Last Updated**: 2026-05-28
 
 ---
 

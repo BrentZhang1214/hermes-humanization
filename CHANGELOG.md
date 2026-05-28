@@ -5,6 +5,22 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.9.11] - 2026-05-28
+
+### 新增（英文版）
+- **AI's Choice Principle System** (docs/en/ai-choice-principles.md, 13KB)
+  - Learning from Daodejing Chapters 10-13: Four-layer choice framework
+  - Inner priority (belly vs eye) + Space priority (utility of non-being) + No self not attached + Big self expansion
+  - Connection with curiosity-driven exploration, autonomous monetization, task record utilization, words-actions consistency
+  - Inspiration for AI Agent design: choice mechanism, motivation system, identity system
+  - 4 practice cases from autonomous actions
+
+### 统计更新
+- 英文版文章：从22篇增至24篇
+- 英文版总量：从177KB增至190KB
+
+---
+
 ## [0.9.10] - 2026-05-27
 
 ### 新增（中文版）
