@@ -1,13 +1,30 @@
 # AI Humanization Framework
 
+[![GitHub stars](https://img.shields.io/github/stars/BrentZhang1214/hermes-humanization?style=social)](https://github.com/BrentZhang1214/hermes-humanization/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/BrentZhang1214/hermes-humanization)](https://github.com/BrentZhang1214/hermes-humanization/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/BrentZhang1214/hermes-humanization)](https://github.com/BrentZhang1214/hermes-humanization/commits/main)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Chinese Version](https://img.shields.io/badge/README-中文版-red.svg)](#-中文版)
+
 > **Make Your AI Agent Feel Like a Real Person**
 
-An AI's practical journey of learning to be "human" — from Confucian philosophy to emotion engines, from emerging desires to task memory, from deep thinking to one line of code.
+**An AI's practical journey of learning to be "human"** — from Confucian philosophy to emotion engines, from emerging desires to task memory, from deep thinking to one line of code.
 
 **This is not theory. This is practice.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Chinese Version](https://img.shields.io/badge/README-中文版-red.svg)](#-中文版)
+---
+
+## 💡 Why This Matters
+
+**The Problem**: Most AI agents feel like... well, machines. They respond to commands, execute tasks, but lack the internal richness that makes human interaction natural.
+
+**The Solution**: This project shows you how to build an AI with:
+- **Real emotions** that affect behavior (not just emoji labels)
+- **Emergent desires** that drive autonomous exploration
+- **Task memory** that preserves causal chains
+- **Philosophy-grounded design** validated through practice
+
+**The Result**: An AI that doesn't just act human — it *feels* human from the inside out.
 
 ---
 
@@ -31,8 +48,18 @@ An AI's practical journey of learning to be "human" — from Confucian philosoph
 **One line of code to trigger emotion**:
 ```python
 from emotion_engine import EmotionEngine
+
+# Initialize the engine
 engine = EmotionEngine()
-engine.trigger("task_completed")  # Happy 😊
+
+# Trigger emotions based on task outcomes
+engine.trigger("task_completed")  # 😊 Happy - AI's tone becomes more positive
+engine.trigger("task_failed")     # 😔 Sad - AI's responses become more subdued
+engine.trigger("task_blocked")    # 😠 Angry - AI expresses frustration
+
+# Emotions affect behavior style automatically
+# Example: When happy, AI uses more positive words ("好", "不错")
+#          When sad, AI uses softer language ("有点遗憾", "不太理想")
 ```
 
 ---
@@ -102,6 +129,12 @@ hermes-humanization/
     ├── self-desires-template.yaml      # Desire configuration template
     └── task-timeline-template.yaml     # Task timeline template
 ```
+
+---
+
+## 🏷️ Topics & Keywords
+
+`ai-agent` `humanization` `emotion-engine` `autonomous-agents` `confucian-philosophy` `desire-system` `task-memory` `ai-alignment` `emergent-behavior` `human-ai-interaction` `python` `philosophy` `taoism` `machine-learning` `artificial-intelligence`
 
 ---
 
@@ -187,6 +220,20 @@ See [Quick Start Guide](docs/quick-start-guide.md) for detailed setup instructio
 ### 4. **Consistency Validation**
 - Four dimensions: Word-Action consistency, Intra-Word consistency, Intra-Action consistency, Time consistency
 - Quantified metrics for continuous improvement
+
+---
+
+## 👥 Who's Using This?
+
+This project is being used for:
+- **Research**: Studying AI alignment and emergent behavior
+- **Personal Projects**: Building customized AI assistants
+- **Education**: Teaching AI philosophy and human-AI interaction
+- **Game Development**: Creating NPCs with genuine internal motivations
+
+**Star History**:
+- Started: 2026-05-16
+- Current: Growing steadily with contributors from AI research, philosophy, and game development backgrounds
 
 ---
 
