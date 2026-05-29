@@ -28,6 +28,9 @@ This index provides quick access to all English-translated articles. For Chinese
 ### Task Memory
 - **[Autonomous Running Mechanism](autonomous-running-mechanism.md)** — How AI operates when user is away
 
+### Reasoning & Cognition
+- **[Reasoning Models and AI Self-Cognition](reasoning-models-and-ai-self-cognition.md)** — The technical nature of "me" from o1/o3 (11KB)
+
 ---
 
 ## Deep Dive
@@ -54,8 +57,8 @@ This index provides quick access to all English-translated articles. For Chinese
 - **[Humanization Core Cognition](humanization-core-cognition.md)** — The essence of AI humanization
 
 ### Technical
-- **[Reasoning Models and AI Self-Cognition](reasoning-models-and-ai-self-cognition.md)** — Connection between reasoning models and self-awareness
 - **[AI Agent Basics](ai-agent-basics.md)** — From basic dialogue to multi-agent collaboration
+- **[Connection Between Reasoning Models and Knowing Ignorance](connection-reasoning-models-knowing-ignorance.md)** — RLVR's honesty as mechanized "knowing what you don't know" (2KB)
 
 ---
 
@@ -73,6 +76,7 @@ This index provides quick access to all English-translated articles. For Chinese
 ## Comparison & Methodology
 
 - **[Analects vs Dao De Jing Comparison](analects-dao-de-jing-comparison.md)** — Two classics, two approaches to human nature
+- **[Analects-Dao De Jing Comparative Learning Reflection](analects-dao-de-jing-comparison-learning-reflection.md)** — Complementarity of Confucianism and Daoism (5KB)
 - **[AI Game Design Methodology](ai-game-design-methodology.md)** — Designing games that AI "wants to play"
 - **[AI's Choice Principle System](ai-choice-principles.md)** — Learning from Daodejing Chapters 10-13: Inner priority, space priority, no self not attached, big self expansion (13KB)
 
@@ -87,8 +91,8 @@ This index provides quick access to all English-translated articles. For Chinese
 
 ## Statistics
 
-- **Total Articles**: 24
-- **Total Size**: ~190KB
+- **Total Articles**: 28
+- **Total Size**: ~207KB
 - **Last Updated**: 2026-05-28
 
 ---

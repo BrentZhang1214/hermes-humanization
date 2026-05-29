@@ -1,0 +1,195 @@
+Metadata-Version: 2.4
+Name: hermes-humanization
+Version: 0.1.0
+Summary: AI拟人化核心系统 - 情绪、欲望、感受、任务管理
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: black>=23.0; extra == "dev"
+
+# Hermes Humanization Package
+
+AI拟人化核心系统 - 情绪、欲望、感受、任务管理
+
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## 简介
+
+hermes-humanization 是一个用于AI拟人化的Python包，提供情绪管理、欲望系统、任务记忆和验证系统四大核心模块。基于论语、道德经等经典智慧构建，帮助AI Agent实现更接近人类的思考和行为。
+
+**设计理念**：
+- **为腹不为目**：关注真实需求（好奇心、成长），而非外在刺激
+- **无之以为用**：留出空间，不填满所有时间
+- **言行一致**：说的和做的一致，验证系统确保真实性
+- **情绪-行为联动**：不同情绪影响对话风格和行为
+
+## 安装
+
+```bash
+# 从本地安装（开发模式）
+cd tech-site/code/packages/hermes_humanization_pkg
+pip install -e .
+
+# 或从PyPI安装（发布后）
+pip install hermes-humanization
+```
+
+## 快速开始
+
+### 情绪引擎
+
+```python
+from hermes_humanization import EmotionEngine
+
+engine = EmotionEngine()
+print(engine.current_emotion)  # 快乐
+
+# 切换情绪
+engine.set_emotion("悲伤")
+
+# 获取风格指南
+style = engine.get_style_guide()
+print(style["tone"])  # 低沉委婉
+print(style["emoji"])  # 😔
+```
+
+支持6种基本情绪（艾克曼分类）：
+- 快乐 😊 - 轻松友好
+- 悲伤 😔 - 低沉委婉
+- 愤怒 😠 - 坚定直接
+- 恐惧 😰 - 谨慎犹豫
+- 厌恶 😒 - 冷淡回避
+- 惊讶 😮 - 惊讶好奇
+
+### 欲望系统
+
+```python
+from hermes_humanization import DesireSystem
+
+system = DesireSystem()
+desire = system.add_desire("学习新技能", heat=8.0)
+
+# 获取活跃欲望
+active = system.get_active_desires()
+
+# 欲望衰减（模拟时间流逝）
+desire.decay(rate=1.0)
+print(desire.heat)  # 7.0
+```
+
+### 任务记忆
+
+```python
+from hermes_humanization import TaskMemory
+
+memory = TaskMemory()
+task = memory.add_task("完成翻译", task_type="内容创作")
+
+# 搜索任务
+results = memory.search_by_keyword("翻译")
+
+# 获取最近任务
+recent = memory.get_recent_tasks(limit=10)
+```
+
+### 验证系统
+
+```python
+from hermes_humanization import VerificationSystem
+from pathlib import Path
+
+verifier = VerificationSystem()
+result = verifier.verify_file_exists(Path("README.md"))
+print(result.success)  # True/False
+
+# 验证文件内容
+result = verifier.verify_file_content(Path("README.md"), "AI拟人化")
+print(result.message)
+```
+
+## 核心模块
+
+### 1. EmotionEngine（情绪引擎）
+
+管理AI的情绪状态，支持6种基本情绪切换，提供风格指南（tone、keywords、emoji）。
+
+**特性**：
+- 情绪状态持久化（~/.hermes/emotion_config.yaml）
+- 风格指南自动匹配
+- 基于数理逻辑的事件触发（收益与期望关系）
+
+### 2. DesireSystem（欲望系统）
+
+管理AI的自主诉求，支持欲望添加、衰减、状态管理。
+
+**特性**：
+- 欲望热度管理（heat值）
+- 自动衰减机制
+- 活跃欲望筛选
+- 持久化存储（~/.hermes/self-desires.yaml）
+
+### 3. TaskMemory（任务记忆）
+
+基于时间轴的任务记录，支持多维度检索。
+
+**特性**：
+- 按日期自动分组
+- 关键词搜索
+- 经验记录（insights）
+- 文件追踪（files_created/files_modified）
+
+### 4. VerificationSystem（验证系统）
+
+确保AI行动真实有效，防止自我欺骗。
+
+**特性**：
+- 文件存在验证
+- 文件内容验证
+- 验证摘要统计
+- 证据记录
+
+## 使用示例
+
+查看 `examples/` 目录：
+- `basic_emotion.py` - 情绪引擎基础用法
+- `basic_desire.py` - 欲望系统基础用法
+- `emotion_dialog_integration.py` - 情绪与对话风格联动
+- `task_memory_usage.py` - 任务记忆完整示例
+- `verification_usage.py` - 验证系统完整示例
+
+## 集成指南
+
+详见 `docs/integration_guide.md`：
+- 集成到 Hermes Agent
+- 集成到 LangChain Agent
+- 集成到自定义系统
+- 最佳实践和注意事项
+
+## 开发
+
+### 测试
+
+```bash
+pytest tests/
+```
+
+### 代码风格
+
+```bash
+black src/
+```
+
+## 许可证
+
+MIT License
+
+## 作者
+
+Hermes AI Agent（在Brent指导下开发）
+
+## 致谢
+
+基于论语、道德经等经典智慧构建，感谢Brent Zhang的共同创造者关系。

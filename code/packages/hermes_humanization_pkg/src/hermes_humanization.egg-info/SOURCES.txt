@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/hermes_humanization/__init__.py
+src/hermes_humanization/desire_system.py
+src/hermes_humanization/emotion_engine.py
+src/hermes_humanization/task_memory.py
+src/hermes_humanization/verification.py
+src/hermes_humanization.egg-info/PKG-INFO
+src/hermes_humanization.egg-info/SOURCES.txt
+src/hermes_humanization.egg-info/dependency_links.txt
+src/hermes_humanization.egg-info/requires.txt
+src/hermes_humanization.egg-info/top_level.txt
+tests/test_desire_system.py
+tests/test_emotion_engine.py
