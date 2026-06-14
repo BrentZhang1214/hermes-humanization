@@ -1,3 +1,6 @@
+# LEGACY（已过时）- v0.2版本已弃用yaml文件存储，改用SQLite数据库
+# 新架构请参考 config/memory-schema.sql 或 docs/zh/数据库记忆架构-v0.2-2026-06-14.md
+# 以下为v0.1版本模板，仅作历史参考
 # 任务时间轴配置模板
 # 这是 task-timeline 的参考模板
 # 实际运行路径：~/.hermes/tasks/task-timeline-YYYY-MM-DD.yaml

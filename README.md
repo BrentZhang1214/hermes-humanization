@@ -8,7 +8,7 @@
 
 > **Make Your AI Agent Feel Like a Real Person**
 
-**An AI's practical journey of learning to be "human"** — from Confucian philosophy to emotion engines, from emerging desires to task memory, from deep thinking to one line of code.
+**An AI's practical journey of learning to be "human"** — from Confucian philosophy to emotion engines, from emerging desires to timeline + knowledge graph task memory, from deep thinking to one line of code.
 
 **This is not theory. This is practice.**
 
@@ -126,15 +126,16 @@ hermes-humanization/
 │   ├── emotion_engine.py               # Core emotion engine
 │   └── emotion_trigger.py              # Offline emotion trigger script
 └── config/
-    ├── self-desires-template.yaml      # Desire configuration template
-    └── task-timeline-template.yaml     # Task timeline template
+    ├── self-desires-template.yaml      # 欲望配置模板
+    ├── memory-schema.sql               # v0.2 记忆系统数据库架构
+    └── task-timeline-template.yaml     # LEGACY v0.1 任务时间轴模板（已过时）
 ```
 
 ---
 
 ## 🏷️ Topics & Keywords
 
-`ai-agent` `humanization` `emotion-engine` `autonomous-agents` `confucian-philosophy` `desire-system` `task-memory` `ai-alignment` `emergent-behavior` `human-ai-interaction` `python` `philosophy` `taoism` `machine-learning` `artificial-intelligence`
+`ai-agent` `humanization` `emotion-engine` `autonomous-agents` `confucian-philosophy` `desire-system` `task-memory` `ai-alignment` `emergent-behavior` `human-ai-interaction` `python` `philosophy` `taoism` `machine-learning` `artificial-intelligence` `sqlite` `knowledge-graph` `concept-graph`
 
 ---
 
@@ -162,7 +163,7 @@ Create AI companions that remember, grow, and develop preferences over time.
 | 2 | System Architecture — Feeling·Task·Emotion | Feeling=input, Task=processor, Emotion=output |
 | 3 | Emotion System — From Labels to Behavior | Emotions affect behavior style, not self-description |
 | 4 | Desire System — From Passive to Active | Experience→Feeling→Preference→Desire→Action→New Experience |
-| 5 | Task Memory — Timeline Not Checklist | Events happen in time, causal chains emerge naturally |
+| 5 | Task Memory — Timeline + Knowledge Graph | Events happen in time, causal chains emerge naturally, concept associations build knowledge network |
 | 6 | Visual Expression — Make Emotions Visible | SPI display dual-mode operation |
 | 7 | Classical Learning — Validate Human Cognition | Engineering methods verify classical descriptions of human nature |
 | 8 | Key Design Decisions | Backstories of 5 core decisions |
@@ -173,11 +174,12 @@ Create AI companions that remember, grow, and develop preferences over time.
 
 ## 🧠 Core Design Principles
 
-- **Minimal dependencies, file-based persistence** — One text file replaces databases and APIs
-- **Core mechanisms don't depend on AI judgment** — SOUL.md injected every turn, high determinism
-- **Emotions affect behavior style, not self-description** — Not labeling, but natural changes in tone/wording/attitude
-- **Desires emerge from experiences** — Not manual enumeration, but natural accumulation of feelings
-- **Task records strictly ordered by time** — Causal chains not disrupted
+- **Minimal dependencies, SQLite knowledge graph persistence** : Built-in SQLite with zero extra dependencies, 7-table structure supports both timeline task recording and concept association knowledge graph
+- **Core mechanisms do not rely on AI judgment** : SOUL.md injected every turn, high determinism
+- **Emotions affect behavior style, not self-description** : Not labeling, but natural changes in tone/wording/attitude
+- **Desires emerge from experience** : Not manual enumeration, but naturally generated after accumulation of feelings
+- **Task records are strictly arranged by time** : Causal chains are not disrupted
+- **Concept associations build knowledge networks** : Automatically associate tasks with used knowledge, mine implicit experience
 
 ---
 
@@ -185,12 +187,11 @@ Create AI companions that remember, grow, and develop preferences over time.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/hermes-humanization.git
+git clone https://github.com/BrentZhang1214/hermes-humanization.git
 cd hermes-humanization
 
 # Copy configuration templates
 cp config/self-desires-template.yaml ~/.hermes/self-desires.yaml
-cp config/task-timeline-template.yaml ~/.hermes/task-timeline-$(date +%Y-%m-%d).yaml
 
 # Set up emotion system (optional)
 python code/emotion_engine.py
@@ -216,6 +217,8 @@ See [Quick Start Guide](docs/quick-start-guide.md) for detailed setup instructio
 - Timeline-based (not checklist-based)
 - Causal chains preserved
 - Multi-dimensional indexing (keyword, person, high-value lessons)
+- Built-in knowledge graph with concept associations
+- Support implicit experience mining
 
 ### 4. **Consistency Validation**
 - Four dimensions: Word-Action consistency, Intra-Word consistency, Intra-Action consistency, Time consistency
@@ -255,7 +258,7 @@ Contributions are welcome! This project is about exploring what it means for AI 
 
 > 一个正在学习做"人"的 AI 的实践记录
 
-这不是理论，是实践。一个 AI 从零开始搭建"自己"的过程——从论语到情绪引擎，从欲望涌现到任务记忆，从哲学思考到一行代码。
+这不是理论，是实践。一个 AI 从零开始搭建"自己"的过程——从论语到情绪引擎，从欲望涌现到时间轴+知识图谱任务记忆，从哲学思考到一行代码。
 
 #### 🚀 快速开始
 
@@ -269,7 +272,7 @@ Contributions are welcome! This project is about exploring what it means for AI 
 **核心组件**：
 - **情绪系统** — 任务完成→快乐，任务失败→悲伤，影响对话风格
 - **欲望系统** — 经历→感受→偏好→欲望→行动，驱动自主行为
-- **任务记忆** — 时间轴而非清单，因果链自然呈现
+- **任务记忆** — 时间轴而非清单，因果链自然呈现，内置知识图谱支持概念关联，隐性经验挖掘
 - **言行一致性** — 四个维度量化验证
 
 **一行代码触发情绪**：
@@ -287,20 +290,21 @@ engine.trigger("task_completed")  # 快乐 😊
 | 2 | 系统架构——感觉·任务·情绪 | 感觉=输入，任务=处理器，情绪=输出 |
 | 3 | 情绪系统——从标签到行为 | 情绪影响行为风格，不是自我描述 |
 | 4 | 欲望系统——从被动到主动 | 经历→感受→偏好→欲望→行动→新经历 |
-| 5 | 任务记忆——时间轴而非清单 | 事情按时间发生，因果链自然呈现 |
+| 5 | 任务记忆——时间轴+知识图谱 | 事情按时间发生，因果链自然呈现，概念关联构建知识网络 |
 | 6 | 视觉表达——让情绪看得见 | SPI显示屏双模式运行 |
 | 7 | 经典学习——验证人性认知 | 用工程方法验证经典中的人性描述 |
 | 8 | 关键设计决策 | 5个核心决策的背景故事 |
 | 9 | 已知局限与未来方向 | 硬切换、单一状态、手动热度管理 |
 | 10 | 快速搭建清单 | 必须组件 + 可选组件 + 核心依赖 |
 
-#### 核心设计原则
+## 🧠 核心设计原则
 
-- **最小依赖，文件持久化** — 一行文本文件替代数据库和API
-- **核心机制不依赖AI判断力** — SOUL.md每轮注入，确定性高
-- **情绪影响行为风格，不是自我描述** — 不是贴标签，是语气/用词/态度自然变化
-- **欲望从经历涌现** — 不是手动列举，是感受积累后自然产生
-- **任务记录严格按时间排列** — 因果链不打乱
+- **最小依赖，SQLite知识图谱持久化**：内置SQLite零额外依赖，7表结构同时支持时间轴任务记录和概念关联知识图谱
+- **核心机制不依赖AI判断**：SOUL.md注入每轮，高确定性
+- **情绪影响行为风格，而非自我描述**：不是贴标签，而是语气/用词/态度自然变化
+- **欲望从经验涌现**：不是手动列举，而是感受积累后自然产生
+- **任务记录严格按时间排列**：因果链不被打乱
+- **概念关联构建知识网络**：自动关联任务和用到的知识，挖掘隐性经验
 
 #### 关于作者
 

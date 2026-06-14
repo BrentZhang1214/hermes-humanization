@@ -5,6 +5,37 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.10.0] - 2026-06-14 「Database-Backed Memory」
+
+### 核心升级（Breaking Change）
+- **记忆系统从文件升级为SQLite知识图谱**：放弃yaml文件存储，改用内置SQLite实现7表结构的记忆系统，支持时间轴任务记录+概念关联知识图谱
+- 移除pyyaml依赖，纯内置库零额外依赖
+- 完全向下兼容v0.1 TaskMemory API，无需修改旧代码即可迁移
+
+### 新增功能
+- **概念管理**：支持添加/修改/删除概念，分类（concept/principle/method/model/observation/insight）
+- **概念关联**：8种关联类型（is_a/part_of/derived_from/analogous_to/contradicts/applies_to/explains/other），1-5强度评分
+- **知识图谱查询**：按深度遍历概念网络，支持关联分析、隐性知识挖掘
+- **事件-概念关联**：每个任务可以关联用到/学到/创造的概念，自动构建经验知识网络
+
+### 代码包更新
+- hermes-humanization Python包版本从0.1.0 → 0.2.0
+- 重写 `task_memory.py`：SQLite实现，支持所有旧API + 新图谱API
+- 新增 `examples/concept_graph_usage.py`：完整知识图谱使用示例
+- 更新 `examples/task_memory_usage.py`：加入v0.2新功能演示
+
+### 文档更新
+- 新增 `docs/zh/数据库记忆架构-v0.2-2026-06-14.md`：完整7表设计文档、迁移路径
+- 新增 `config/memory-schema.sql`：数据库建表语句
+- 标记 `config/task-timeline-template.yaml` 为LEGACY（已过时）
+- README.md中英双语同步更新：任务记忆章节、核心设计原则、安装步骤、项目结构
+
+### 仓库更新
+- GitHub Topics新增 `sqlite` / `knowledge-graph` / `concept-graph` 标签
+- 发布v0.2.0 Release版本
+
+---
+
 ## [0.9.11] - 2026-05-28
 
 ### 新增（英文版）
